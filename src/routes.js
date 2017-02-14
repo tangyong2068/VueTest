@@ -1,17 +1,62 @@
 export default{
-    '/': {
-      component: require('./views/home')
-    },
+  '/':{
+        name:'project',
+        component: require('./components/Main/Index.vue'),
+        subRoutes:{
+            '/': {//默认
+                component: require('./components/AllProject/Index.vue'),
+            },
+            '/all': {//默认
+                component: require('./components/AllProject/Index.vue'),
+            },
+            '/myCreate': {//默认
+                component: require('./components/MyCreatePro/Index.vue'),
+            },
+            '/myParticipate': {//默认
+                component: require('./components/MyParticipatePro/Index.vue'),
+            },
+        }
+  },
+  '/manager': {
+        name:'manager',
+        component: require('./components/Manager/Manager.vue'),
+        subRoutes: {
+            '/': {//默认
+                component: require('./components/Panel/Index.vue'),
+            },
+            '/panel':{//数据开发
+                component: require('./components/Panel/Index.vue'),
+            },
+            '/graphic':{//数据开发
+                component: require('./components/Graphic/Index.vue'),
+            },
+            '/dataSource':{//数据开发
+                component: require('./components/DataSource/Index.vue'),
+            },
 
-    '/login': {
-      name:'login',
-      component: require('./views/Login')
+            '/baseProperty':{//数据开发
+                component: require('./components/BaseProperty/Index.vue'),
+            },
+
+        }
     },
-    // '/modify':{
-    //   component:require('./views/ModifyUserInfo')
-    // },
-    // '/password':{
-    //   component:require('./views/ModifyPassword')
-    // },
+    // '/project':{
+    //     name:'project',
+    //     component: require('./components/Main/Index.vue'),
+    //     subRoutes: {
+    //         '/': {//默认
+    //             component: require('./components/AllProject/Index.vue'),
+    //         },
+    //         '/all': {//默认
+    //             component: require('./components/AllProject/Index.vue'),
+    //         },
+    //         '/myCreate': {//默认
+    //             component: require('./components/MyCreatePro/Index.vue'),
+    //         },
+    //         '/myParticipate': {//默认
+    //             component: require('./components/MyParticipatePro/Index.vue'),
+    //         },
+    //     }
+    // }
 
 }

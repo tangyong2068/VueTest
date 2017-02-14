@@ -10,6 +10,7 @@
     </div>
   </div>
 
+
 </template>
 
 <script>
@@ -17,9 +18,9 @@
 export default{
   vuex:{
     getters:{
-      showInfo:({app}) => app.showinfo,
-      alertMsg:({app}) => app.customMsg,
-      alertType:({app}) => app.type,
+      showInfo:({handler}) => handler.showinfo,
+      alertMsg:({handler}) => handler.msg,
+      alertType:({handler}) => handler.type,
     }
   }
 }

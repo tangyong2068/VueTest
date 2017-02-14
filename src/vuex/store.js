@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 // import createLogger from 'vuex/logger'
 
-import app from './modules/app'
+import index from './modules'
 
 Vue.use(Vuex)
 
@@ -12,27 +12,34 @@ if (__DEV__) {
   // middlewares.push(createLogger())
 }
 
-const store = new Vuex.Store({
-  modules: {
-    app
-  },
-  middlewares
+import modules from './modules'
+
+export default new Vuex.Store({
+  modules
 })
 
-export default store
 
-if (module.hot) {
-  module.hot.accept([
-    './modules/app'
-  ], () => {
-    try {
-      store.hotUpdate({
-        modules: {
-          app: require('./modules/app').default
-        }
-      })
-    } catch (e) {
-      console.log(e.stack)
-    }
-  })
-}
+// const store = new Vuex.Store({
+//   modules: {
+//     index
+//   },
+//   middlewares
+// })
+//
+// export default store
+//
+// if (module.hot) {
+//   module.hot.accept([
+//     './modules/index'
+//   ], () => {
+//     try {
+//       store.hotUpdate({
+//         modules: {
+//           index: require('./modules/index').default
+//         }
+//       })
+//     } catch (e) {
+//       console.log(e.stack)
+//     }
+//   })
+// }

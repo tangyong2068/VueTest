@@ -19,7 +19,7 @@ If you want to build a Vue app really really fast, try using [vbuild](https://gi
 ## Quick Start
 
 ```bash
-$ git clone https://github.com/egoist/vuepack.git 
+$ git clone https://github.com/egoist/vuepack.git
 $ cd vuepack
 $ npm install
 $ npm run dev
@@ -36,7 +36,7 @@ $ npm run dev
 
 ## Customize the devServer
 
-You can directly modify [scripts/devServer.js](https://github.com/egoist/vuepack/blob/master/scripts/devServer.js) since it simply uses [Express](http://expressjs.com) under the hood. 
+You can directly modify [scripts/devServer.js](https://github.com/egoist/vuepack/blob/master/scripts/devServer.js) since it simply uses [Express](http://expressjs.com) under the hood.
 
 Or, in a more recommended way, update the [scripts/wrap.js](https://github.com/egoist/vuepack/blob/master/scripts/wrap.js) instead.
 

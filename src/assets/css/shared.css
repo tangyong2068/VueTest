@@ -6,6 +6,7 @@
 html {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -13,4 +14,277 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+table,thead,th,td {
+  font-weight: normal;
+}
+
+.mana-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 0 16px;
+  display: flex;
+  /*margin-top: 25px;*/
+  min-width: 1366px;
+  height: 100%;
+  min-height: 690px;
+}
+
+.yby-container {
+  flex:1;
+}
+
+/**/
+.radius-point-20 {
+  position: relative;
+  top:30%;
+  left:-10px;
+  height: 20px;
+  width:20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #F3F2F2;
+}
+
+.radius-point-abs {
+  position: absolute;
+  top:30%;
+  left:260px;
+  height: 20px;
+  width:20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #F3F2F2;
+}
+
+.border-radius-6 {
+  border-color: #C6CBD2;
+  border-radius: 6px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  -o-border-radus:6px;
+  -ms-border-radius:6px;
+}
+
+.border-radius-8 {
+  border-color: #C6CBD2;
+  border-radius: 8px;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  -o-border-radus:8px;
+  -ms-border-radius:8px;
+}
+
+.radius-point-10 {
+  height: 10px;
+  width:10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.radius-circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.border-radius-circle {
+  border-radius: 50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -o-border-radus:50%;
+  -ms-border-radius:50%;
+}
+
+/*树结构人员选择删除按钮start*/
+.btn-remove {
+  position: relative;
+  left: -12px;
+  top: -10px;
+  color:#FC0303;
+  font-size: 18px!important;
+}
+
+.btn-remove:hover {
+  cursor: pointer;
+}
+/*树结构人员选择删除按钮end*/
+
+/*membertree start*/
+.mt-deptree{
+  overflow: scroll;
+  height: 510px;
+}
+
+.mt-deptree i {
+  padding: 0 5px;
+  color: #B1B8C1;
+}
+
+.mt-company {
+  display: block;
+  margin-top: 30px;
+}
+
+.mt-deptree ul {
+  padding-left: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.mt-deptree li {
+  display: block;
+  line-height: 20px;
+  padding: 5px 0px 5px 15px;
+  margin-right: 5px;
+}
+
+.mt-deptree li:hover {
+  cursor: pointer;
+}
+/*membertree end*/
+
+
+.sweet-alert {
+  padding: 21px 0px!important;
+  width: 372px!important;
+  font-family: "Microsoft YaHei",sans-serif!important;
+}
+
+.sweet-alert h2 {
+  margin: 0!important;
+  font-size: 18px!important;
+  border-bottom: 1px solid #e6e6e6!important;
+  font-size: 18px!important;
+  font-weight: normal!important;
+  color: #a0a0a0!important;
+  padding-bottom: 20px!important;
+  line-height: 19px!important;
+}
+
+.sweet-alert h2 i {
+  color:#f5ba2c;
+  font-size: 19px;
+  margin-right: 8px;
+}
+
+.sweet-alert p {
+  height: 110px!important;
+  line-height: 110px!important;
+  font-size: 14px!important;
+}
+
+.sweet-alert button {
+  font-size: 14px!important;
+  font-weight: normal!important;
+  -webkit-border-radius: 3px!important;
+  border-radius: 3px!important;
+  padding: 0!important;
+  margin: 0!important;
+  height: 33px;
+  line-height: 33px;
+  width: 119px;
+  letter-spacing: 10px;
+  padding-left: 16px!important;
+}
+
+.sweet-alert button.cancel {
+  margin-right: 15px!important;
+}
+
+.sweet-alert button.cancel:hover {
+  background-color: #929292;
+}
+
+.sweet-alert button.confirm {
+  background-color: #246ece;
+}
+
+#edui14_iframeholder {
+  width: 630px!important;
+}
+
+.edui-editor-imagescale {
+  max-width: 590px!important;
+}
+
+#edui14_iframeholder iframe {
+  overflow: scroll!important;
+}
+
+.view {
+  width: 630px!important;
+  max-width: 630px!important;
+}
+
+.view img {
+  width: 100%!important;
+}
+
+#edui14_mainbar iframe {
+  width: 630px!important;
+}
+
+@media screen and (max-height:768px) {
+  .ccontainer {
+    height: 540px!important;
+  }
+
+  .comment-scroll {
+    height: 540px!important;
+  }
+
+  .modal-container {
+    height: 570px!important;
+  }
+
+  .mt-add-btn {
+    margin-top: 10px!important;
+    padding: 5px 30px!important;
+  }
+
+  .middel-icon {
+    vertical-align: top;
+    margin-top: 220px;
+  }
+
+  .container-left {
+    height: 1194px!important;
+  }
+
+  .page-bar {
+    padding-bottom: 40px;
+  }
+
+}
+
+@media screen and (min-height:769px) {
+  .mt-wrapper {
+    margin-top: -50px;
+  }
+}
+
+/**new version ueditor**/
+.art-editor {
+  height: 955px;
+}
+
+/*左边135模板高度*/
+#style-overflow-list {
+  height: 876px!important;
+}
+
+.edui-editor-iframeholder {
+  /*height: 90%!important;*/
+  height: 867px!important; /*右边编辑区域高度*/
+  width: 630px!important;
 }

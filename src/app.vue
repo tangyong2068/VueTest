@@ -1,16 +1,15 @@
 <style src="./assets/css/shared.css"></style>
 
 <template>
-
-  <div class="app">
+  <div>
     <router-view></router-view>
-  </div>
+  </div>  
 </template>
 
 <script>
-  import store from './vuex/store'
+import store from './vuex/store'
 
-  export default {
-    store
-  }
+export default {
+  store
+}
 </script>

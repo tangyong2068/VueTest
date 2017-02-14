@@ -2,7 +2,7 @@ var webpack = require('webpack')
 var config = require('./webpack.config')
 var path = require('path')
 
-config.entry.push('webpack-hot-middleware/client')
+config.entry.app.push('webpack-hot-middleware/client')
 config.devtool = 'inline-eval-cheap-source-map'
 config.plugins = [
   new webpack.HotModuleReplacementPlugin(),
