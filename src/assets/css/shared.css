@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  font-family: "Microsoft YaHei",sans-serif;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #E1E2E7;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
